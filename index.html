@@ -16,19 +16,20 @@
 <div class=" btn-group btn-group-lg ">
   
         <a class="logo" href="#"><img src="photos\logo.jpeg" width="50" height="50" ></a>
-    	<button class=" btn btn-dark ">SMART-GYM</button>
-    	<button class=" btn btn-dark  ">PLANS</button>
-    	<button class=" btn btn-dark">TRAINERS</button>
+    	<button class=" btn btn-dark">SMART-GYM</button>
+    	<button class=" btn btn-dark">PLANS</button>
+    	<button class=" btn btn-dark">trAINERS</button>
     	<button class=" btn btn-dark">FRANCHISE</button>
-    	<button class=" btn btn-dark">CONTACT US</button>
-    </div>
+    	<button class=" btn btn-dark">CONTACT US</button>      
+      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('slide').style.opacity='0.4'">LOGIN</button>
+</div>
 </div>
 
 <!-----------------------------slider-------------------------------------------------------------------------------------->
-	
-<img class="banner" src="photos\slide1.jpg" width="100%" height="80%">
-<img  class="banner" src="photos\banner1.jpg"  width="100%" height="80%">
-<img class="banner" src="photos\banner2.jpeg"  width="100%">
+<div id="slide">
+<img class="banner" src="photos\slide1.jpg"  width= "100%">
+<img  class="banner" src="photos\banner1.jpg"  width="100%">
+<img class="banner" src="photos\banner2.jpeg"  width ="100%">
 <script type="text/javascript">
 	var x=0;
 showbanner();
@@ -44,12 +45,70 @@ function showbanner()
     i[x].style.display="block";
      x++;
      setTimeout(showbanner,3000);
-}
- 
-      
-
+ }
 </script>
 </div>
+<div id="mymenu" class="mymodal">
+  
+
+<img src="photos\client2.jpg" class="client2" width="250" height="250">
+   <form class="mymodal-contact">
+    
+      
+        <label>NAME</label>
+      <br>
+      
+     <input type="text" name="Name" required important size="50%">
+      <br>
+      
+      <label>EMAIL</label>
+     <br>
+     
+      <input type="email" name="Name" required important size="50%">
+      <br>
+       
+      <label>  Phone number</label>
+        <br>
+      <input type="tel" name="phoneno" required important size="50%">
+    <br>
+    
+      <label>Male</label>
+      <input type="radio" id="checkmale" name="male" value="male" important onclick="checkY()">
+      <label>Female</label>
+      <input type="radio" id="checkfemale" name="female" value="female" important onclick="checkX()">
+      <script type="text/javascript">
+        var xx= document.getElementById("checkmale");
+        var y=document.getElementById('checkfemale');
+        function checkX()
+        {
+          xx.checked=false;
+        }
+        function checkY()
+        {
+          y.checked=false;
+        }
+      </script>
+    <br>
+   <button class="btn btn-primary size">
+     SUBMIT
+   </button>
+   <button class="btn btn-dark size cancel" onclick ="document.getElementById('mymenu').style.display='none',document.getElementById('slide').style.opacity='1'">
+     CANCEL
+   </button>
+   </form>
+   <br>
+   <br>
+   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">LOGIN WITH SOCIAL MEDIA</button>
+   <div id ="logwithsocial" class="logwithsocial row ">
+   <a href="facebook.com" class=" btn btn-primary size">
+   login with facebook
+   </a>
+   <a class="btn btn-danger size">login with Google+</a>
+
+   </div>
+ 
+  </div>
+
 	
 </body>
 </html>
