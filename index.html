@@ -13,9 +13,12 @@
 </head>
 <body>	
 <div class=" navbar bg-dark">
-<div class=" btn-group btn-group-lg ">
+<div class=" btn-group btn-group-lg myhead ">
   
-        <a class="logo" href="#"><img src="photos\logo.jpeg" width="50" height="50" ></a>
+        <a  href="#"><img class="logo" src="photos\logo.jpeg" ></a>
+      <button class="brandtitle btn btn-dark btn-group-lg">
+        SMART-GYM
+      </button> 
     	<button class=" btn btn-dark">SMART-GYM</button>
     	<button class=" btn btn-dark">PLANS</button>
     	<button class=" btn btn-dark">TRAINERS</button>
@@ -50,26 +53,29 @@ function showbanner()
 </div>
 <div id="mymenu" class="mymodal">
   
+<div class="row">
+  <div class="col-sm-4"></div>
+<img src="photos\client2.jpg" class="client2">
+</div>
 
-<img src="photos\client2.jpg" class="client2" width="250" height="250">
-   <form class="mymodal-contact">
+   <form class="mymodal-contact" action="list.php">
     
       
         <label>NAME</label>
       <br>
       
-     <input type="text" name="Name" required important size="50%">
+     <input type="text" name="Name" required important class="col-sm-11">
       <br>
       
       <label>EMAIL</label>
      <br>
      
-      <input type="email" name="Name" required important size="50%">
+      <input type="email" name="Name" required important class="col-sm-11">
       <br>
        
-      <label>  Phone number</label>
+      <label>  PHONE NUMBER</label>
         <br>
-      <input type="tel" name="phoneno" required important size="50%">
+      <input type="tel" name="phoneno" required important class="col-sm-11">
     <br>
     
       <label>Male</label>
