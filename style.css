@@ -11,6 +11,10 @@ body{
 .header
 {   
 }
+.login_position{
+	position: fixed;
+
+}
 .logo{
 	padding: 0px 0px 0px 10px;
 	margin: 0px 10px 0px 10px;
@@ -18,7 +22,7 @@ body{
 	width: 50px;
 	height: 50px;
 }
-.brandtitle{
+.brandtitle.btn.btn-dark.btn-group-lg{
  display: none;
 }
 .title
@@ -43,12 +47,11 @@ body{
 	position: fixed ;
 	display: none ;
 	z-index: 1000;
-	height: 700px;
-	width: 40%;
-	margin-left:30%;
+	margin-left:23%;
 	overflow: auto;
 	background-color: white;
     border-radius: 10px;
+    padding: 0 0 3% 0;
 }
 
 table{
@@ -61,6 +64,7 @@ table{
 	font-size: 20px;
 	margin-left: 7%;
 	margin-top: 10px;
+	padding-bottom: 5%;
 }
 #mymenu{
 	display: none;
@@ -117,4 +121,35 @@ a.btn.size{
         padding: 0px 0px 0px 0px;
         align-items: left;
 	}
+	.mymodal-content{
+		margin-left: 10%;
+		width: 100%;
+	    align-items: center;
+	}
+	.loginpage_content{
+		margin-left: 5px;
+	}
+}
+
+.aivehi
+{
+	width: 575px;
+	display: inline-block;
+}
+.loginpage_content{
+	z-index: 1500;
+	padding: 0% 0% 5% 0%;
+	display: block;
+	background-color: white;
+	margin-left: 23%;
+	border-radius: 10px;
+	position: fixed;
+	overflow: auto;
+	align-content: center;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+#loginpage
+{
+	display: none;
 }

@@ -24,7 +24,10 @@
     	<button class=" btn btn-dark">TRAINERS</button>
     	<button class=" btn btn-dark">FRANCHISE</button>
     	<button class=" btn btn-dark">CONTACT US</button>      
-      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('slide').style.opacity='0.4'">LOGIN</button>
+      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('slide').style.opacity='0.4',document.getElementById('loginpage').style.display='none'">SIGNUP</button>
+      <div class="aivehi">
+      </div>
+      <button class="btn btn-dark login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('slide').style.opacity='0.4',document.getElementById('mymenu').style.display='none'">LOGIN</button>
 </div>
 </div>
 
@@ -51,7 +54,7 @@ function showbanner()
  }
 </script>
 </div>
-<div id="mymenu" class="mymodal">
+<div id="mymenu" class="mymodal col-sm-6  ">
   
 <div class="row">
   <div class="col-sm-4"></div>
@@ -104,17 +107,41 @@ function showbanner()
    </form>
    <br>
    <br>
-   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">LOGIN WITH SOCIAL MEDIA</button>
+   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">SIGNUP WITH SOCIAL MEDIA</button>
    <div id ="logwithsocial" class="logwithsocial row ">
    <a href="facebook.com" class=" btn btn-primary size">
-   login with facebook
+   SIGNUP with facebook
    </a>
-   <a class="btn btn-danger size">login with Google+</a>
+   <a class="btn btn-danger size">SIGNUP with Google+</a>
 
    </div>
  
   </div>
-
+<div id="loginpage" class="mymodal col-sm-6">
+<form name="login_data" class="mymodal-contact" action="login.php">  
+<div class="row">	
+<div class="col-sm-4"></div>
+<img src="photos\client2.jpg" class="client2">
+</div>
+<br>
+<label>USERNAME</label>
+<br>
+<input type="text" name="username" class="col-sm-11" required important pattern="[A-Za-z 0-9 @]">
+<br>
+<br>
+<label>PASSWORD</label>
+<br>
+<input type="pws" name="PASSWORD" class="col-sm-11" important pattern="{6}">
+<br>
+<br>
+ <button class="btn btn-primary size btn-group-lg">
+     SUBMIT
+   </button>
+   <button class="btn btn-dark size btn-group-lg cancel" onclick ="document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='1'">
+     CANCEL
+   </button>
+</form>
+</div>
 	
 </body>
 </html>
