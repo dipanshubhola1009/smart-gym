@@ -12,6 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>	
+
+
+<!-------------------------------NAVBAR--------------------------------------------------------------->	
 <div class=" navbar bg-dark">
 <div class=" btn-group btn-group-lg myhead ">
   
@@ -32,10 +35,10 @@
 </div>
 
 <!-----------------------------slider-------------------------------------------------------------------------------------->
-<div id="slide">
-<img class="banner " src="photos\slide1.jpg"  width= "100%">
-<img  class="banner " src="photos\banner1.jpg"  width="100%">
-<img class="banner " src="photos\banner2.jpeg"  width ="100%">
+<div id=" slide">
+<img class="banner " src="photos\slide1.jpg"   >
+<img  class="banner " src="photos\banner1.jpg" >
+<img class="banner " src="photos\banner2.jpeg" >>
 <script type="text/javascript">
 	var x=0;
 showbanner();
@@ -54,6 +57,12 @@ function showbanner()
  }
 </script>
 </div>
+
+<!--------------------------------------------ONCLICK DISPLAYING ELEMENTS------------------------------------------------->
+
+
+<!-------------------------------------------------SIGNUP MODAL------------------------------------------------------->
+
 <div id="mymenu" class="mymodal col-sm-6  ">
   
 <div class="row">
@@ -62,30 +71,37 @@ function showbanner()
 </div>
 
    <form class="mymodal-contact" action="list.php">
-    
-      
-        <label>NAME</label>
+     <label>NAME</label>
       <br>
-      
      <input type="text" name="Name" required important class="col-sm-11">
       <br>
-      
-      <label>EMAIL</label>
+     <label>EMAIL</label>
      <br>
-     
-      <input type="email" name="Name" required important class="col-sm-11">
-      <br>
-       
-      <label>  PHONE NUMBER</label>
-        <br>
-      <input type="tel" name="phoneno" required important class="col-sm-11">
-    <br>
-    
-      <label>Male</label>
-      <input type="radio" id="checkmale" name="male" value="male" important onclick="checkY()">
-      <label>Female</label>
-      <input type="radio" id="checkfemale" name="female" value="female" important onclick="checkX()">
-      <script type="text/javascript">
+     <input type="email" name="Name" required important class="col-sm-11">
+     <br>
+     <label>  PHONE NUMBER</label>
+     <br>
+     <input type="tel" name="phoneno" required important class="col-sm-11">
+     <br>
+     <label>Male</label>
+     <input type="radio" id="checkmale" name="male" value="male" important onclick="checkY()">
+     <label>Female</label>
+     <input type="radio" id="checkfemale" name="female" value="female" important onclick="checkX()">
+     <br>
+     <button class="btn btn-primary size">SUBMIT</button>
+     <button class="btn btn-dark size cancel" onclick ="document.getElementById('mymenu').style.display='none',document.getElementById('slide').style.opacity='1'">CANCEL</button>
+   </form>
+   <br>
+   <br>
+   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">SIGNUP WITH SOCIAL MEDIA</button>
+   <div id ="logwithsocial" class="logwithsocial row ">
+   <a href="facebook.com" class=" btn btn-primary size">SIGNUP with facebook</a>
+   <a class="btn btn-danger size">SIGNUP with Google+</a>
+   </div>
+
+</div>
+ 
+    <script type="text/javascript">
         var xx= document.getElementById("checkmale");
         var y=document.getElementById('checkfemale');
         function checkX()
@@ -97,26 +113,9 @@ function showbanner()
           y.checked=false;
         }
       </script>
-    <br>
-   <button class="btn btn-primary size">
-     SUBMIT
-   </button>
-   <button class="btn btn-dark size cancel" onclick ="document.getElementById('mymenu').style.display='none',document.getElementById('slide').style.opacity='1'">
-     CANCEL
-   </button>
-   </form>
-   <br>
-   <br>
-   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">SIGNUP WITH SOCIAL MEDIA</button>
-   <div id ="logwithsocial" class="logwithsocial row ">
-   <a href="facebook.com" class=" btn btn-primary size">
-   SIGNUP with facebook
-   </a>
-   <a class="btn btn-danger size">SIGNUP with Google+</a>
 
-   </div>
- 
-  </div>
+<!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
+
 <div id="loginpage" class="mymodal col-sm-6">
 <form name="login_data" class="mymodal-contact" action="login.php">  
 <div class="row">	
@@ -142,6 +141,10 @@ function showbanner()
    </button>
 </form>
 </div>
-	
+
+<!----------------------------------------------------detail body------------------------------------------->
+<div class="details">
+</div>
+hellpwhkwjhfq
 </body>
 </html>
