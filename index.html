@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>	
+<body bgcolor="#bdbfbe">	
 
 
 <!-------------------------------NAVBAR--------------------------------------------------------------->	
@@ -28,15 +28,15 @@
     	<button class=" btn btn-dark">TRAINERS</button>
     	<button class=" btn btn-dark">FRANCHISE</button>
     	<button class=" btn btn-dark">CONTACT US</button>      
-      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('slide').style.opacity='0.4',document.getElementById('loginpage').style.display='none'">SIGNUP</button>
+      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='0.2'">SIGNUP</button>
       <div class="aivehi">
       </div>
-      <button class="btn btn-dark login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('slide').style.opacity='0.4',document.getElementById('mymenu').style.display='none'">LOGIN</button>
+      <button class="btn btn-dark login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('mymenu').style.display='none'   ">LOGIN</button>
 </div>
 </div>
 <!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
 
-<div id="loginpage" class="mymodal col-sm-6">
+<div id="loginpage" class="mymodal col-6">
 <form name="login_data" class="mymodal-contact" action="login.php">  
 <div class="row">	
 <div class="col-sm-4"></div>
@@ -64,7 +64,7 @@
 
 <!-------------------------------------------------SIGNUP MODAL------------------------------------------------------->
 
-<div id="mymenu" class="mymodal col-sm-6  ">
+<div id="mymenu" class="mymodal col-6  ">
   
 <div class="row">
   <div class="col-sm-4"></div>
@@ -167,5 +167,14 @@ function showbanner()
 	<img  class="mytrainer" src="photos/maintabs-004.jpg" >
 </a>	
 </div>
+
+
+<div class="details">
+OUR PARTNERS
+</div>
+<div id="googlemap" >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.145014540366!2d77.0083686149491!3d29.686575082013814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e700840000001%3A0xe9aac18ef9acb7c7!2sRathi%20Academy%20of%20Mathematics!5e0!3m2!1sen!2sin!4v1585055539652!5m2!1sen!2sin" class="googlemap col-12" ></iframe>
+</div>
+
 </body>
 </html>
