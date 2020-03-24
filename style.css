@@ -3,14 +3,12 @@
 body{
     margin: 0px 0px 0px 0px;
 	background-color:  #baffc4;
+	animation: displayin 0.5s;
 }
 
 
 }
 /*--------------------------------------header------------------------------------------------------*/
-.header
-{   
-}
 .login_position{
 	position: fixed;
 
@@ -36,6 +34,11 @@ body{
 .banner{
 	display: none;
 	position: absolute;
+	animation: displayin 1s;
+}
+@keyframes displayin{
+	0%{ opacity: 0.2;}
+	100%{ opacity: 1; }
 }
 .left-margin
 {
@@ -68,6 +71,7 @@ table{
 }
 #mymenu{
 	display: none;
+	animation: displayin 0.7s;
 }
 #logwithsocial,.logwithsocial
 {   margin-left: 5%;
@@ -87,10 +91,6 @@ table{
 }
 a.btn.size{
 	width: 45%;
-}
-.slide
-{
-	opacity: 0.8;
 }
 
 @media only screen and (max-width: 720px)
@@ -152,4 +152,18 @@ a.btn.size{
 #loginpage
 {
 	display: none;
+	animation: displayin 0.7s;
 }
+@media only screen and (max-width: 1024px)
+
+{
+	.aivehi{
+		display: none;
+	}
+}
+
+@keyframes displayout{
+	0%{ opacity: 1;}
+	100%{ opacity: 0; }
+}
+
