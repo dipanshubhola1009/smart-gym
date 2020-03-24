@@ -33,6 +33,7 @@ body{
 }
 #slide{
 	width: 100%;
+	position: fixed;
 }
 
 img.banner{
@@ -78,6 +79,7 @@ table{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	display: none;
 	animation: displayin 0.7s;
+	position: absolute;
 }
 #logwithsocial,.logwithsocial
 {   margin-left: 5%;
@@ -160,6 +162,7 @@ a.btn.size{
 {   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	display: none;
 	animation: displayin 0.7s;
+	position: absolute;
 }
 @media only screen and (max-width: 1024px)
 
@@ -174,8 +177,15 @@ a.btn.size{
     margin-top: 3%;
     height: 100px;
     display: block;
-    font-size: 3em;
-}
+    font-size: 3em;}
+    .mytrainer{
+    height: 200px;
+	border-radius: 1px;
+	transition: transform 1.5s;
+    }
+    img.mytrainer:hover{
+	transform: scale(1.1);
+    }
 }
 
 @keyframes displayout{
@@ -205,7 +215,7 @@ a.btn.size{
 	border-radius: 1px;
 	transition: transform 1.5s;
 }
-a.col-sm-3{
+a.col-3{
 	padding: 0px 0px 0px 0px;
 }
 img.mytrainer:hover{

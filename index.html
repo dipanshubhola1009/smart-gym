@@ -34,33 +34,33 @@
       <button class="btn btn-dark login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('slide').style.opacity='0.4',document.getElementById('mymenu').style.display='none'">LOGIN</button>
 </div>
 </div>
+<!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
 
-<!-----------------------------slider-------------------------------------------------------------------------------------->
-<div id=" slide">
-<img class="banner " src="photos\slide1.jpg"   >
-<img  class="banner " src="photos\banner1.jpg" >
-<img class="banner " src="photos\banner2.jpeg" >
-<script type="text/javascript">
-	var x=0;
-showbanner();
-function showbanner()
-{ 
-	var i = document.getElementsByClassName("banner");
-    if(x>2){
-    	x=0;
-    }
-    for (var j = 0; j<i.length; j++) {
-    	i[j].style.display="none";
-    }
-    i[x].style.display="block";
-     x++;
-     setTimeout(showbanner,4000);
- }
-</script>
+<div id="loginpage" class="mymodal col-sm-6">
+<form name="login_data" class="mymodal-contact" action="login.php">  
+<div class="row">	
+<div class="col-sm-4"></div>
+<img src="photos\client2.jpg" class="client2">
 </div>
-
-<!--------------------------------------------ONCLICK DISPLAYING ELEMENTS------------------------------------------------->
-
+<br>
+<label>USERNAME</label>
+<br>
+<input type="text" name="username" class="col-sm-11" required important pattern="[A-Za-z 0-9 @]">
+<br>
+<br>
+<label>PASSWORD</label>
+<br>
+<input type="pws" name="PASSWORD" class="col-sm-11" important pattern="{6}">
+<br>
+<br>
+ <button class="btn btn-primary size btn-group-lg">
+     SUBMIT
+   </button>
+   <button class="btn btn-dark size btn-group-lg cancel" onclick ="document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='1'">
+     CANCEL
+   </button>
+</form>
+</div>
 
 <!-------------------------------------------------SIGNUP MODAL------------------------------------------------------->
 
@@ -115,33 +115,36 @@ function showbanner()
         }
       </script>
 
-<!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
 
-<div id="loginpage" class="mymodal col-sm-6">
-<form name="login_data" class="mymodal-contact" action="login.php">  
-<div class="row">	
-<div class="col-sm-4"></div>
-<img src="photos\client2.jpg" class="client2">
+
+<!-----------------------------slider-------------------------------------------------------------------------------------->
+<div id=" slide">
+<img class="banner " src="photos\slide1.jpg"   >
+<img  class="banner " src="photos\banner1.jpg" >
+<img class="banner " src="photos\banner2.jpeg" >
+<script type="text/javascript">
+	var x=0;
+showbanner();
+function showbanner()
+{ 
+	var i = document.getElementsByClassName("banner");
+    if(x>2){
+    	x=0;
+    }
+    for (var j = 0; j<i.length; j++) {
+    	i[j].style.display="none";
+    }
+    i[x].style.display="block";
+     x++;
+     setTimeout(showbanner,4000);
+ }
+</script>
 </div>
-<br>
-<label>USERNAME</label>
-<br>
-<input type="text" name="username" class="col-sm-11" required important pattern="[A-Za-z 0-9 @]">
-<br>
-<br>
-<label>PASSWORD</label>
-<br>
-<input type="pws" name="PASSWORD" class="col-sm-11" important pattern="{6}">
-<br>
-<br>
- <button class="btn btn-primary size btn-group-lg">
-     SUBMIT
-   </button>
-   <button class="btn btn-dark size btn-group-lg cancel" onclick ="document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='1'">
-     CANCEL
-   </button>
-</form>
-</div>
+
+<!--------------------------------------------ONCLICK DISPLAYING ELEMENTS------------------------------------------------->
+
+
+
 
 <!----------------------------------------------------detail body------------------------------------------->
 <div class="details">
@@ -151,16 +154,16 @@ function showbanner()
 
 <div class="boxx">
 <div class="row">	
-<a href="#" class="col-sm-3">
+<a href="#" class="col-3">
 	<img class="mytrainer" src="photos/maintabs-001.jpg" >
 </a>	
-<a href="#" class="col-sm-3 ">
+<a href="#" class="col-3 ">
 	<img class="mytrainer" src="photos/maintabs-002.jpg" >
 </a>	
-<a href="#" class="col-sm-3  ">
+<a href="#" class="col-3  ">
 	<img  class="mytrainer" src="photos/maintabs-003.jpg" >
 </a>	
-<a href="#" class="col-sm-3 ">
+<a href="#" class="col-3 ">
 	<img  class="mytrainer" src="photos/maintabs-004.jpg" >
 </a>	
 </div>
