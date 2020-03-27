@@ -1,8 +1,7 @@
 
 
-body{
+.body{
     margin: 0px 0px 0px 0px;
-	background-color:  #838584;
 	animation: displayin 0.5s;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -12,7 +11,8 @@ body{
 /*--------------------------------------header------------------------------------------------------*/
 .login_position{
 	position: fixed;
-
+	top: 20px;
+	right: 100px;
 }
 .logo{
 	padding: 0px 0px 0px 10px;
@@ -21,8 +21,9 @@ body{
 	width: 50px;
 	height: 50px;
 }
-.brandtitle.btn.btn-dark.btn-group-lg{
- display: none;
+h3.brandtitle{
+	display: none;
+	color: white;
 }
 .title
 { 
@@ -102,34 +103,52 @@ table{
 a.btn.size{
 	width: 45%;
 }
+.dropdowncontent
+{   display: none;
+	list-style: none;
+	padding: 0px 0px 0px 0px;
+}
+button.btn.btn-dark.logu.mobile{
+	padding: 0px 0px 0px 0px;
+	display: block;
+}
 
 @media only screen and (max-width: 520px)
-{
-	button.btn.btn-dark{
+{   button.btn.btn-dark.logu.mobile{
+	padding: 0px 0px 0px 0px;
+	display: block;
+}
+	button.btn.btn-dark.full{
 		display: none;
 	}
+	.dropdowncontent
+{   display: none;
+	list-style: none;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	animation: displayin .2s;
+	z-index: 15000;
+}
+img.logo .dropdowncontent{ display: none;}
+
+img.logo:hover .dropdowncontent{ display: block;}
 	.navbar{
 		height:40px;
 	}
+	h3.brandtitle:hover .dropdowncontent{display: block;}
 	.logo{
 		background-image: url( "photos/logo.jpeg");
-		width:20px;
-		height: 20px;
+		width:30px;
+		height: 30px;
 		padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
-	text-decoration: none;
+	    margin: 0px 0px 0px 0px;
+	    text-decoration: none;
 	
 	}
-	.brandtitle.btn.btn-dark.btn-group-lg{
+	h3.brandtitle{
 		display: block;
-		width: 200px;
-		height: 30px;
 		color: white;
-		z-index: 499;
-        margin-left:5px;
-        margin-top: -2px;
-        padding: 0px 0px 0px 0px;
-        align-items: left;
+		margin-left: 20px;
 	}
 	.mymodal-content{
 		margin-left: 10%;
@@ -182,8 +201,10 @@ a.btn.size{
 	.aivehi{
 		display: none;
 	}
+
 	img.banner{
-    height: 10%;}
+    height: 10%;
+    }
     .details{
       width: 100%;
     margin-top: 3%;
@@ -202,7 +223,11 @@ a.btn.size{
 	width: 100%;
 	margin-top: 10px;
 	height: 100px;
-}
+    }
+    button.btn.btn-dark.logu.mobile{
+	padding: 0px 0px 0px 0px;
+	display: none;
+    }
 
 
 }
@@ -244,4 +269,13 @@ img.mytrainer:hover{
 	width: 100%;
 	margin-top: 10px;
 	height: 400px;
+}
+.footer
+{
+	width: 100%;
+	background-color: #838584;
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+
+
 }

@@ -5,139 +5,114 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
 	 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body bgcolor="#bdbfbe">	
+<body class="body">	
 
 
 <!-------------------------------NAVBAR--------------------------------------------------------------->	
 <div class=" navbar bg-dark">
 <div class=" btn-group btn-group-lg myhead ">
   
-        <a  href="#"><img class="logo" src="photos\logo.jpeg" ></a>
-      <button class="brandtitle btn btn-dark btn-group-lg">
-        SMART-GYM
-      </button> 
-    	<button class=" btn btn-dark">SMART-GYM</button>
-    	<button class=" btn btn-dark">PLANS</button>
-    	<button class=" btn btn-dark">TRAINERS</button>
-    	<button class=" btn btn-dark">FRANCHISE</button>
-    	<button class=" btn btn-dark">CONTACT US</button>      
-      <button class="btn btn-dark" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='0.2'">SIGNUP</button>
-      <div class="aivehi">
-      </div>
-      <button class="btn btn-dark login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('mymenu').style.display='none'   ">LOGIN</button>
+        <button class="btn-dark btn logo mobile" onclick="drop()"><img class="logo" src="photos\logo.jpeg" ></button>
+        <script type="text/javascript" src="script.js"></script>
+        <h3 class="brandtitle">SMART GYM</h3>
+    	<button class=" btn btn-dark full">SMART-GYM</button>
+    	<button   class=" btn btn-dark full">PLANS</button>
+    	<button class=" btn btn-dark full">TRAINERS</button>
+    	<button class=" btn btn-dark full">FRANCHISE</button>
+    	<button class=" btn btn-dark full">CONTACT US</button>      
+        <button class="btn btn-dark full" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='0.2'">SIGNUP</button>
+        <button class="btn btn-dark  full login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('mymenu').style.display='none'   ">LOGIN</button>
 </div>
 </div>
 <!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
+  <ul id="drop1" class="dropdowncontent">
+  	<li><button class=" btn btn-dark col-sm-4">PLANS</button></li>
+  	<li><button class=" btn btn-dark col-sm-4">TRAINERS</button></li>
+  	<li><button class=" btn btn-dark col-sm-4">FRANCHISE</button></li>
+  	<li><button class=" btn btn-dark col-sm-4">CONTACTUS</button></li>
+  </ul>
+
 
 <div id="loginpage" class="mymodal col-6">
-<form name="login_data" class="mymodal-contact" action="login.php">  
-<div class="row">	
-<div class="col-sm-4"></div>
-<img src="photos\client2.jpg" class="client2">
-</div>
-<br>
-<label>USERNAME</label>
-<br>
-<input type="text" name="username" class="col-sm-11" required important pattern="[A-Za-z 0-9 @]">
-<br>
-<br>
-<label>PASSWORD</label>
-<br>
-<input type="pws" name="PASSWORD" class="col-sm-11" important pattern="{6}">
-<br>
-<br>
- <button class="btn btn-primary size btn-group-lg">
-     SUBMIT
-   </button>
-   <button class="btn btn-dark size btn-group-lg cancel" onclick ="document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='1'">
-     CANCEL
-   </button>
-</form>
+     <form name="login_data" class="mymodal-contact" action="login.php">  
+        <div class="row">	
+        <div class="col-sm-4"></div>
+        <img src="photos\client2.jpg" class="client2">
+        </div> 
+        <br>
+        <label>USERNAME</label>
+        <br>
+        <input type="text" name="username" class="col-sm-11" required important pattern="[A-Za-z 0-9 @]">
+        <br>
+        <br>
+        <label>PASSWORD</label>
+        <br>
+        <input type="pws" name="PASSWORD" class="col-sm-11" important pattern="{6}">
+        <br>
+        <br>
+        <button class="btn btn-primary size btn-group-lg"> SUBMIT</button>
+        <button class="btn btn-dark size btn-group-lg cancel" onclick ="document.getElementById('loginpage').style.display='none',document.getElementById('slide').style.opacity='1'">CANCEL</button>
+     </form>
 </div>
 
 <!-------------------------------------------------SIGNUP MODAL------------------------------------------------------->
 
 <div id="mymenu" class="mymodal col-6  ">
-  
-<div class="row">
-  <div class="col-sm-4"></div>
-<img src="photos\client2.jpg" class="client2">
-</div>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <img src="photos\client2.jpg" class="client2">
+    </div>
+    <form class="mymodal-contact" action="list.php">
+       <label>NAME</label>
+       <br>
+       <input type="text" name="Name" required important class="col-sm-11">
+       <br>
+       <label>EMAIL</label>
+       <br>
+       <input type="email" name="Name" required important class="col-sm-11">
+       <br>
+       <label>  PHONE NUMBER</label>
+       <br>
+       <input type="tel" name="phoneno" required important class="col-sm-11">
+       <br>
+       <label>Male</label>
+       <input type="radio" id="checkmale" name="male" value="male" important onclick="checkY()">
+       <label>Female</label>
+       <input type="radio" id="checkfemale" name="female" value="female" important onclick="checkX()">
+       <br>
+       <button class="btn btn-primary size">SUBMIT</button>
+       <button class="btn btn-dark size cancel" onclick ="document.getElementById('mymenu').style.display='none',document.getElementById('slide').style.opacity='1'">CANCEL</button>
+    </form>
+   <br>
+   <br>
+       <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">SIGNUP WITH SOCIAL MEDIA</button>
 
-   <form class="mymodal-contact" action="list.php">
-     <label>NAME</label>
-      <br>
-     <input type="text" name="Name" required important class="col-sm-11">
-      <br>
-     <label>EMAIL</label>
-     <br>
-     <input type="email" name="Name" required important class="col-sm-11">
-     <br>
-     <label>  PHONE NUMBER</label>
-     <br>
-     <input type="tel" name="phoneno" required important class="col-sm-11">
-     <br>
-     <label>Male</label>
-     <input type="radio" id="checkmale" name="male" value="male" important onclick="checkY()">
-     <label>Female</label>
-     <input type="radio" id="checkfemale" name="female" value="female" important onclick="checkX()">
-     <br>
-     <button class="btn btn-primary size">SUBMIT</button>
-     <button class="btn btn-dark size cancel" onclick ="document.getElementById('mymenu').style.display='none',document.getElementById('slide').style.opacity='1'">CANCEL</button>
-   </form>
-   <br>
-   <br>
-   <button id="logwithsocialclick" class="btn btn-warning log-with-social-button size" onclick="document.getElementById('logwithsocial').style.display='block',document.getElementById('logwithsocialclick').style.display='none'">SIGNUP WITH SOCIAL MEDIA</button>
    <div id ="logwithsocial" class="logwithsocial row ">
-   <a href="facebook.com" class=" btn btn-primary size">SIGNUP with facebook</a>
-   <a class="btn btn-danger size">SIGNUP with Google+</a>
+     <a href="facebook.com" class=" btn btn-primary size">SIGNUP with facebook</a>
+     <a class="btn btn-danger size">SIGNUP with Google+</a>
    </div>
 
 </div>
- 
-    <script type="text/javascript">
-        var xx= document.getElementById("checkmale");
-        var y=document.getElementById('checkfemale');
-        function checkX()
-        {
-          xx.checked=false;
-        }
-        function checkY()
-        {
-          y.checked=false;
-        }
+    
+    <script type="text/javascript" src="script.js">
+      
       </script>
 
 
 
 <!-----------------------------slider-------------------------------------------------------------------------------------->
 <div id=" slide">
-<img class="banner " src="photos\slide1.jpg"   >
-<img  class="banner " src="photos\banner1.jpg" >
-<img class="banner " src="photos\banner2.jpeg" >
-<script type="text/javascript">
-	var x=0;
-showbanner();
-function showbanner()
-{ 
-	var i = document.getElementsByClassName("banner");
-    if(x>2){
-    	x=0;
-    }
-    for (var j = 0; j<i.length; j++) {
-    	i[j].style.display="none";
-    }
-    i[x].style.display="block";
-     x++;
-     setTimeout(showbanner,4000);
- }
+  <img class="banner " src="photos\slide1.jpg"   >
+  <img  class="banner " src="photos\banner1.jpg" >
+  <img class="banner " src="photos\banner2.jpeg" >
+<script type="text/javascript" src="script.js">
+	
 </script>
 </div>
 
@@ -153,28 +128,47 @@ function showbanner()
 
 
 <div class="boxx">
-<div class="row">	
-<a href="#" class="col-3">
-	<img class="mytrainer" src="photos/maintabs-001.jpg" >
-</a>	
-<a href="#" class="col-3 ">
-	<img class="mytrainer" src="photos/maintabs-002.jpg" >
-</a>	
-<a href="#" class="col-3  ">
-	<img  class="mytrainer" src="photos/maintabs-003.jpg" >
-</a>	
-<a href="#" class="col-3 ">
-	<img  class="mytrainer" src="photos/maintabs-004.jpg" >
-</a>	
+    <div class="row">	
+      <a href="#" class="col-3">
+	      <img class="mytrainer" src="photos/maintabs-001.jpg" >
+      </a>	
+      <a href="#" class="col-3 ">
+	      <img class="mytrainer" src="photos/maintabs-002.jpg" >
+      </a>	
+      <a href="#" class="col-3  ">
+	      <img  class="mytrainer" src="photos/maintabs-003.jpg" >
+      </a>	
+      <a href="#" class="col-3 ">
+	      <img  class="mytrainer" src="photos/maintabs-004.jpg" >
+      </a>	
 </div>
 
 
 <div class="details">
 OUR PARTNERS
 </div>
+
+
 <div id="googlemap" >
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.145014540366!2d77.0083686149491!3d29.686575082013814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e700840000001%3A0xe9aac18ef9acb7c7!2sRathi%20Academy%20of%20Mathematics!5e0!3m2!1sen!2sin!4v1585055539652!5m2!1sen!2sin" class="googlemap col-12" ></iframe>
 </div>
+
+<div class="footer">
+	<br>
+	<h2 align="center">SMART-GYM</h2>
+	<p align="center">
+	Smart-gym a platform which convert a functional gym into semi-automated smart gym which provide selfie attendence and workout planer. 
+    </p><br><hr><hr>
+    <h1 align="center">@Maglu.pvt.lim
+    </h1>
+    <p align="center">Frontend developer-Dipanshu bhola</p>
+    <p align="center">Backend developer-kartik tarika</p>
+    <div class="row">
+    <div class="col-11"></div>
+    <div class="col-1">	
+    <button class="btn btn-warning" onclick="document.documentElement.scrollTop ='0'" >top</button>
+</div>
+</div>	
 
 </body>
 </html>
