@@ -52,12 +52,13 @@ img.banner{
 	position: fixed ;
 	display: none ;
 	z-index: 1000;
-	margin-left:23%;
 	overflow: auto;
+	margin-left: 23%;
 	background-color: white;
     border-radius: 10px;
     padding: 0 0 3% 0;
 }
+
 
 table{
 	align-items: center;
@@ -101,7 +102,8 @@ a.btn.size{
 
 
 @media only screen and (max-width: 800px)
-{   .logu{
+{   
+	.logu{
 	display: block;
 
     }
@@ -163,7 +165,8 @@ a.btn.size{
 }
 @media only screen and (max-width: 1600px)
 
-{   .desktoplogo{
+{   
+	.desktoplogo{
 	display: block;
     }
 	

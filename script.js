@@ -1,3 +1,34 @@
+ var visi=0;
+        function visible()
+        { 
+          if( visi == 0 )
+          {
+            document.getElementById('mymenu').style.display='block';
+            document.getElementById('loginpage').style.display='none';
+            visi=1;
+          }
+          else
+          {
+            document.getElementById('mymenu').style.display='none';
+            visi=0;
+          }
+        }
+var visi2=0;
+function visible2()
+{       
+    visi=0;
+    if( visi2 == 0 )
+          {
+            document.getElementById('loginpage').style.display='block';
+            document.getElementById('mymenu').style.display='none';
+            visi2=1;
+          }
+          else
+          {
+            document.getElementById('loginpage').style.display='none';
+            visi2=0;
+          }
+}        
  var count=0;
         function drop()
         { 

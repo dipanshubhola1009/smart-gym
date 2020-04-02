@@ -26,27 +26,36 @@
     	  <button class=" btn btn-dark full">TRAINERS</button>
     	  <button class=" btn btn-dark full">FRANCHISE</button>
     	  <button class=" btn btn-dark full">CONTACT US</button>      
-        <button class="btn btn-dark full" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('loginpage').style.display='none', document.getElementById('slide').style.opacity='0.2'">SIGNUP</button>
-        <button class="btn btn-dark  full login_position"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('mymenu').style.display='none'   ">LOGIN</button>
+        <button class="btn btn-dark full" onclick="visible()">SIGNUP</button>
+        <button class="btn btn-dark  full login_position"  onclick="visible2() ">LOGIN</button>
   </div>
 </div>
 <!----------------------------------------------LOGIN MODAL--------------------------------------------------------------------->
   <ul id="drop1" class="dropdowncontent">
-  	<li><button class=" btn btn-dark col-sm-4">PLANS</button></li>
-  	<li><button class=" btn btn-dark col-sm-4">TRAINERS</button></li>
-  	<li><button class=" btn btn-dark col-sm-4">FRANCHISE</button></li>
-  	<li><button class=" btn btn-dark col-sm-4">CONTACTUS</button></li>
-    <li><button class="btn btn-dark col-sm-4" onclick="document.getElementById('mymenu').style.display='block',document.getElementById('loginpage').style.display='none', document.getElementById('slide').style.opacity='0.2'">SIGNUP</button></li>
-    <li><button class="btn btn-dark  col-sm-4"  onclick="document.getElementById('loginpage').style.display='block',document.getElementById('mymenu').style.display='none',document.getElementById('drop1').style.document='none'"">LOGIN</button></li>
-  </ul>
+  	<li><button class=" btn btn-dark">PLANS</button></li>
+  	<li><button class=" btn btn-dark ">TRAINERS</button></li>
+  	<li><button class=" btn btn-dark ">FRANCHISE</button></li>
+  	<li><button class=" btn btn-dark">CONTACTUS</button></li>
+    <li><button class="btn btn-dark " onclick=" visible()">SIGNUP</button></li>
+    <li>
+      <button class="btn btn-dark"  onclick="visible2()">LOGIN
+      </button>
+      <script type="text/javascript" src="script.js" ></script>  
+      </li>
+    </ul> 
+  
 
 
-<div id="loginpage" class="mymodal col-6">
+  <div id="loginpage" class="mymodal col-6">
      <form name="login_data" class="mymodal-contact" action="login.php">  
         <div class="row">	
-        <div class="col-sm-4"></div>
+          <div class="col"></div>
+          <div class="col">
         <img src="photos\client2.jpg" class="client2">
+      </div>
+      <div class="col"></div>
         </div> 
+        <h1 align="center">lOGIN</h1>
         <br>
         <label>USERNAME</label>
         <br>
@@ -64,12 +73,15 @@
 </div>
 
 <!-------------------------------------------------SIGNUP MODAL------------------------------------------------------->
-
-<div id="mymenu" class="mymodal col-6  ">
-    <div class="row">
-      <div class="col-sm-4"></div>
-      <img src="photos\client2.jpg" class="client2">
-    </div>
+<div id="mymenu" class="mymodal col-6">
+       <div class="row">
+          <div class="col"></div>
+           <div class="col">
+           <img  src="photos\client2.jpg" class="client2">
+         </div>
+           <div class="col"></div>
+         </div>
+         <h1 align="center">SIGNUP</h1>
     <form class="mymodal-contact" action="list.php">
        <label>NAME</label>
        <br>
@@ -99,7 +111,8 @@
      <a href="facebook.com" class=" btn btn-primary size">SIGNUP with facebook</a>
      <a class="btn btn-danger size">SIGNUP with Google+</a>
    </div>
-
+  </div>
+</div>
 </div>
     
     <script type="text/javascript" src="script.js">
