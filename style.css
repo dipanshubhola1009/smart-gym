@@ -14,13 +14,7 @@
 	top: 20px;
 	right: 100px;
 }
-.logo{
-	padding: 0px 0px 0px 10px;
-	margin: 0px 10px 0px 10px;
-	text-decoration: none;
-	width: 50px;
-	height: 50px;
-}
+
 h3.brandtitle{
 	display: none;
 	color: white;
@@ -108,8 +102,12 @@ a.btn.size{
 
 @media only screen and (max-width: 800px)
 {   .logu{
-	display: none;
-}
+	display: block;
+
+    }
+    .desktoplogo{
+    	display: none;
+    }
 	button.btn.btn-dark.full{
 		display: none;
 	}
@@ -165,12 +163,12 @@ a.btn.size{
 }
 @media only screen and (max-width: 1600px)
 
-{   .logu{
+{   .desktoplogo{
 	display: block;
-	width: 50px;
-	height: 50px;
-     }
+    }
+	
 	 button.btn.btn-dark.mobile{
+	}
 	padding: 0px 0px 0px 0px;
  	display: none;
     }
@@ -203,17 +201,13 @@ a.btn.size{
     }
     a.col-3{
 	padding: 0px 0px 0px 0px;
-}
+     }
     .googlemap{
 	width: 100%;
 	margin-top: 10px;
-	height: 100px;
+	height: 400px;
     }
-    button.btn.btn-dark.logu.mobile{
-	padding: 0px 0px 0px 0px;
-	display: none;
-    }
-
+    
 
 }
 
